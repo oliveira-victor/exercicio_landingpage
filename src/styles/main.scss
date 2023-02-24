@@ -1,5 +1,25 @@
-$bgColor: #146194;
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'trilogy';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
 }

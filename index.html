@@ -5,9 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Senhor dos Anéis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1>
+            <img class="header__title" src="./dist/images/title.png" alt="The Lord of The Rings">
+            <button class="header__button">ENTRAR</button>
+        </h1>
+    </header>
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__container__left">
+                <h2>FÓRUM DE FÃS DA SAGA</h2>
+                <p>cadastre-se agora e junte-se a esta sociedade</p>
+                <form class="hero__form">
+                    <label for="username">E-mail</label>
+                    <input type="text" id="username" required>
+                    <label for="username">Senha</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">CADASTRAR</button>
+                    <a href="#">Já tenho cadastro</a>
+                </form>
+            </div>
+            <div class="hero__container__right">
+                <p>"Um Anel para todos governar..."</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="trilogy">
+            <nav class="trilogy__tabs">
+                <button data-tab-button="movie1" class="trilogy__tabs__button trilogy__tabs__button--is-active">A Sociedade do Anel</button>
+                <button data-tab-button="movie2" class="trilogy__tabs__button">As Duas Torres</button>
+                <button data-tab-button="movie3" class="trilogy__tabs__button">O Retorno do Rei</button>
+            </nav>
+            <div data-tab-id="movie1" class="trilogy__board trilogy__board--is-active">
+                <div>
+                    <img src="./dist/images/movie1.jpg" alt="A Sociedade do Anel">
+                </div>
+                <div class="trilogy__board__synopsis">
+                    <h2>A Sociedade do Anel</h2>
+                    <p>
+                        Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel.
+                    </p>
+                    <img src="./dist/images/movie1-scene.jpg" alt="Cena de A Sociedade do Anel">
+                </div>
+            </div>
+            <div data-tab-id="movie2" class="trilogy__board">
+                <div>
+                    <img src="./dist/images/movie2.jpg" alt="As Duas Torres">
+                </div>
+                <div class="trilogy__board__synopsis">
+                    <h2>As Duas Torres</h2>
+                    <p>
+                        Frodo, seus amigos e os contínuos esforços para destruir o anel. Frodo e Sam descobrem que estão sendo seguidos pelo misterioso Gollum. Enquanto iso, Aragorn, o elfo e arqueiro Legolas e o anão Gimli chegam ao reino de Rohan, onde o rei Theoden foi vítima de uma maldição mortal de Saruman.
+                    </p>
+                    <img src="./dist/images/movie2-scene.jpg" alt="Cena de As Duas Torres">
+                </div>
+            </div>
+            <div data-tab-id="movie3" class="trilogy__board">
+                <div>
+                    <img src="./dist/images/movie3.jpg" alt="O Retorno do Rei">
+                </div>
+                <div class="trilogy__board__synopsis">
+                    <h2>O Retorno do Rei</h2>
+                    <p>
+                        O confronto final entre as forças do bem e do mal que lutam pelo controle do futuro da Terra Média se aproxima. Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf e Pippin partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso, Frodo, Sam e Gollum seguem sua viagem rumo à Montanha da Perdição para destruir o anel.
+                    </p>
+                    <img src="./dist/images/movie3-scene.jpg" alt="Cena de O Retorno do Rei">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
