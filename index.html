@@ -20,16 +20,18 @@
     <div class="hero">
         <div class="hero__container">
             <div class="hero__container__left">
-                <h2>FÓRUM DE FÃS DA SAGA</h2>
-                <p>cadastre-se agora e junte-se a esta sociedade</p>
-                <form class="hero__form">
-                    <label for="username">E-mail</label>
-                    <input type="text" id="username" required>
-                    <label for="username">Senha</label>
-                    <input type="password" id="password" required>
-                    <button type="submit">CADASTRAR</button>
-                    <a href="#">Já tenho cadastro</a>
-                </form>
+                <div class="sub-container-left">
+                    <h2>FÓRUM DE FÃS DA SAGA</h2>
+                    <p>cadastre-se agora e junte-se a esta sociedade</p>
+                    <form class="hero__form">
+                        <label for="username">E-mail</label>
+                        <input type="text" id="username" required>
+                        <label for="username">Senha</label>
+                        <input type="password" id="password" required>
+                        <button type="submit">CADASTRAR</button>
+                        <a href="#">Já tenho cadastro</a>
+                    </form>
+                </div>
             </div>
             <div class="hero__container__right">
                 <p>"Um Anel para todos governar..."</p>
@@ -43,7 +45,7 @@
                 <button data-tab-button="movie2" class="trilogy__tabs__button">As Duas Torres</button>
                 <button data-tab-button="movie3" class="trilogy__tabs__button">O Retorno do Rei</button>
             </nav>
-            <div data-tab-id="movie1" class="trilogy__board trilogy__board--is-active">
+            <div data-tab-id="movie1" class="trilogy__board trilogy__board--is-active fade-in">
                 <div>
                     <img src="./dist/images/movie1.jpg" alt="A Sociedade do Anel">
                 </div>
@@ -55,7 +57,7 @@
                     <img src="./dist/images/movie1-scene.jpg" alt="Cena de A Sociedade do Anel">
                 </div>
             </div>
-            <div data-tab-id="movie2" class="trilogy__board">
+            <div data-tab-id="movie2" class="trilogy__board fade-in">
                 <div>
                     <img src="./dist/images/movie2.jpg" alt="As Duas Torres">
                 </div>
@@ -67,7 +69,7 @@
                     <img src="./dist/images/movie2-scene.jpg" alt="Cena de As Duas Torres">
                 </div>
             </div>
-            <div data-tab-id="movie3" class="trilogy__board">
+            <div data-tab-id="movie3" class="trilogy__board fade-in">
                 <div>
                     <img src="./dist/images/movie3.jpg" alt="O Retorno do Rei">
                 </div>
