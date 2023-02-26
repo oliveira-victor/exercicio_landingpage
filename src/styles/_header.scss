@@ -5,8 +5,13 @@
     width: 100%;
     padding: 10px 20px;
     position: fixed;
-    background: rgb(225,255,228);
-    background: linear-gradient(0deg, rgba(225,255,228,0) 0%, rgba(25,32,25,1) 100%);
+    background-color: variaveis.$corDeFundo;
+    transition: background-color 1s ease;
+
+    &--is-hidden {
+        background: rgb(225,255,228);
+        background: linear-gradient(0deg, rgba(225,255,228,0) 0%, rgba(25,32,25,1) 100%);
+    }
 
     &__title {
         height: 60px;
@@ -30,12 +35,21 @@
     }
 
     @media (max-width: 767px) {
+        height: 60px;
+
         &__title {
             height: 40px;
         }
 
         &__button {
             height: 35px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+        &__button {
+            height: 60px;
         }
     }
 }
