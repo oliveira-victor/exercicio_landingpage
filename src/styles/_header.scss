@@ -28,4 +28,14 @@
             color: variaveis.$corBotaoHeader;
         }
     }
+
+    @media (max-width: 767px) {
+        &__title {
+            height: 40px;
+        }
+
+        &__button {
+            height: 35px;
+        }
+    }
 }

@@ -52,3 +52,29 @@
         text-align: center;
     }
 }
+
+@media (max-width: 767px) {
+    .products {
+        &__container {
+            display: block;
+            padding: 16px;
+
+            &__item {
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .products {
+        &__container {
+            grid-template-columns: 1fr 1fr;
+            padding: 16px;
+
+            &__item {
+                margin: 16px 0;
+            }
+        }
+    }
+}

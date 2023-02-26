@@ -21,6 +21,10 @@
             &--is-active {
                 border-bottom: 2px solid variaveis.$corBotaoHeader;
             }
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -32,6 +36,13 @@
 
         &--is-active {
             display: grid;
+        }
+
+        @media (max-width: 767px) {
+            &--is-active{
+                display: block;
+                padding: 0 16px;
+            }
         }
 
         img {
@@ -48,6 +59,13 @@
             h2, p {
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &__board {
+            margin: 30px 16px;
+            gap: 10px;
         }
     }
 }
