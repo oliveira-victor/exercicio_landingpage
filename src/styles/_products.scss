@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.products {
+    margin: 50px 0;
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &__item {
+            background-color: variaveis.$verdePadrao;
+            color: variaveis.$verdeFundo;
+            border-radius: 8px;
+
+            img {
+                width: 100%;
+            }
+
+            .product-title {
+                padding: 16px;
+            }
+
+            .product-text {
+                padding: 16px;
+            }
+
+            .product-button {
+                background-color: variaveis.$verdeFundo;
+                color: variaveis.$verdePadrao;
+                width: 100%;
+                height: 60px;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0 0 8px 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: lighten(variaveis.$verdeFundo, 3%);
+                    color: variaveis.$corNeutra;
+                }
+            }
+        }
+    }
+
+    h2 {
+        color: variaveis.$verdePadrao;
+        margin-bottom: 50px;
+        font-size: 32px;
+        text-align: center;
+    }
+}
