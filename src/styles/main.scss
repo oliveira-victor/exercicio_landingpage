@@ -2,7 +2,8 @@
 @use 'header';
 @use 'hero';
 @use 'trilogy';
-@use 'director';
+@use 'bio';
+@use 'footer';
 
 * {
     margin: 0;
@@ -16,13 +17,48 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Macondo', cursive;
 }
 
 .container {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+}
+
+.fixed-bg {
+    margin-top: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%; 
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    height: 600px;
+}
+
+.fixed-bg p {
+    font-size: 26px;
+    text-shadow: 2px 2px 8px #404040;
+}
+
+.bg-1 {
+    background-image: url(../images/fixed-bg.jpg);
+}
+
+.wide-bg {
+    background-color: variaveis.$verdeFundo;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.quote {
+    width: 90%;
+    margin: auto;
+    font-family: 'Macondo', cursive;
 }
 
 // effects

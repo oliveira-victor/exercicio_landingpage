@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+.bio {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 40px;
+    color: variaveis.$verdePadrao;
+
+    h2, p {
+        margin-top: 40px;
+    }
+
+    img {
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+.bio2 {
+    padding-top: 100px;
+}

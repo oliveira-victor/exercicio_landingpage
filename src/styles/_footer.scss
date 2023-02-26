@@ -1,0 +1,17 @@
+@use 'variaveis';
+
+.footer {
+    color: #fff;
+    background-color: variaveis.$footerColor;
+    text-align: center;
+    padding: 50px 0;
+
+    a {
+        text-decoration: none;
+        color: variaveis.$verdePadrao;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
