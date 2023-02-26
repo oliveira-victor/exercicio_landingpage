@@ -36,7 +36,7 @@
 
         &__right {
             font-size: 58px;
-            color: #fff;
+            color: variaveis.$corNeutra;
         }
     }
 
@@ -57,7 +57,7 @@
         width: 80%;
         height: 50px;
         background-color: variaveis.$corPincipal;
-        color: #fff;
+        color: variaveis.$corNeutra;
         font-size: 18px;
         cursor: pointer;
         border: none;
